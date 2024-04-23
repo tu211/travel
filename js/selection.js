@@ -1,26 +1,44 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // 获取相关元素
-    const timeInput = document.getElementById('time');
-    const sceneryInput = document.getElementsByID('scenery');
-    const saveBtn = document.getElementById('save_btn');
-    const deleteBtn = document.getElementById('delete_btn');
+    // 获取时间输入框的值
+    var saveBtn = document.getElementById('save_btn');
+    var clearBtn = document.getElementById('clear_btn');
+    var addBtn = document.getElementById('add_btn');
+    var outputParagraph = document.getElementById('output');
+    var savedText = []; // 变量用于存储输入框的值
 
-    // 将保存按钮的点击事件与 saveSelection 函数关联起来
-    saveBtn.addEventListener('click', saveSelection);
+    saveBtn.addEventListener('click', function () {
+        var timeInput = document.getElementById('time').value;
+        // 获取景点选择框元素
+        var scenerySelect = document.getElementById('scenery');
 
-    // 将删除按钮的点击事件与 deleteSelection 函数关联起来
-    deleteBtn.addEventListener('click', deleteSelection);
+        // 获取用户选择的选项的索引
+        var selectedIndex = scenerySelect.selectedIndex;
+        // 用户选择了一个选项
+        var selectedOption = scenerySelect.options[selectedIndex];
+        var selectedText = selectedOption.text;
 
-    function saveSelection() {
-        var time_text = timeInput.value;
-        var scenery_text = sceneryInput.value;
-        alert("Time: " + time_text + "景點: " + scenery_text);
-    }
+        function savedText(newContent) {
+            savedText.push(newContent);
+            return savedText
+        };
+    
+        // 将时间和选择的景点信息设置为output段落的文本内容
+        outputParagraph.textContent = "時間：" + timeInput + "\n" + "景點：" + selectedText;
+        // 添加新的内容到数组中
+        
+        result = savedText("時間：" + timeInput + "\n" + "景點：" + selectedText);
+        alert(result);
+    });
 
-    // 这是你可能需要的删除功能的示例
-    function deleteSelection() {
-        timeInput.value = ''; // 清空时间输入框
-        alert("Selection deleted.");
-    }
+    addBtn.addEventListener('click', function() {
+        outputParagraph.textContent += ("\n時間：" + timeInput + "\n" + "景點：" + selectedText); // 追加新内容
+        result = savedText("時間：" + timeInput + "\n" + "景點：" + selectedText);
+        alert(result);
+    });
 
+    clearBtn.addEventListener('click', function() {
+        // 在此处添加删除操作的逻辑
+        // 清空output段落的文本内容
+        outputParagraph.textContent = "";
+    });
 });

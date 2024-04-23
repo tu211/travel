@@ -248,33 +248,33 @@
           <h2 class="section-title mb-3 text-center">行程表</h2>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
           <table>
-            <tr>
-              <fieldset>
-                <legend>行程表</legend>
-                <label>時間: </label> <input id="time">
-                <label>景點: </label>
-                <select id="scenery" style="font-size: 20px;">
-                  <option value="">請選擇景點: </option>
-                  <option value="01">澎湖天后宮</option>
-                  <option value="02">四眼井</option>
-                  <option value="03">觀音亭</option>
-                  <option value="04">西瀛虹橋</option>
-                  <option value="05">篤行十村</option>
-                  <option value="06">順承門</option>
-                  <option value="07">金龜頭砲台</option>
-                  <option value="08">隘門沙灘</option>
-                  <option value="09">鎖港南鎮風塔</option>
-                  <option value="10">龍門後灣港 (龍門沙灘)</option>
-                  <option value="11">海底郵筒</option>
-                  <option value="12">山水沙灘</option>
-                  <option value="13">嵵裡沙灘</option>
-                  <option value="14">風櫃洞／幽浮涼亭</option>
-                </select>
-                <button id="save_btn" onclick="saveSelection()">儲存</button>
-                <button id="delete_btn" onclick="deleteSelection()">刪除</button>
-                <p id="output"></p>
-                <script src="js/selection.js"></script>
-              </fieldset>
+            <fieldset>
+              <legend>行程表</legend>
+              <label>時間: </label> <input id="time" type="datetime-local">
+              <label>景點: </label>
+              <select id="scenery" style="font-size: 20px;">
+                <option value="">請選擇景點: </option>
+                <option value="01">澎湖天后宮</option>
+                <option value="02">四眼井</option>
+                <option value="03">觀音亭</option>
+                <option value="04">西瀛虹橋</option>
+                <option value="05">篤行十村</option>
+                <option value="06">順承門</option>
+                <option value="07">金龜頭砲台</option>
+                <option value="08">隘門沙灘</option>
+                <option value="09">鎖港南鎮風塔</option>
+                <option value="10">龍門後灣港 (龍門沙灘)</option>
+                <option value="11">海底郵筒</option>
+                <option value="12">山水沙灘</option>
+                <option value="13">嵵裡沙灘</option>
+                <option value="14">風櫃洞／幽浮涼亭</option>
+              </select>
+              <button id="save_btn" onclick="saveSelection()">儲存</button>
+              <button id="add_btn" onclick="addSelection()">新增</button>
+              <button id="clear_btn" onclick="clearSelection()">清除</button>
+              <p id="output"></p>
+              <script src="js/selection.js"></script>
+            </fieldset>
           </table>
         </div>
       </div>
