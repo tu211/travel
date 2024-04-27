@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Tour Free Bootstrap Template for Travel Agency by Untree.co</title>
+  <title>綠島</title>
 </head>
 
 <body>
@@ -110,224 +110,74 @@
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-md-6 text-center">
-          <h2 class="section-title mb-3 text-center">Team</h2>
+          <h2 class="section-title mb-3 text-center">行程表</h2>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-        </div>
-      </div>
+          <label for="time">時間：</label>
+          <input type="datetime-local" id="time">
+          <label for="scenery">選擇景點：</label>
+          <select id="scenery">
+            <option value="">請選擇景點...</option>
+            <option value="1">澎湖天后宮</option>
+            <option value="2">四眼井</option>
+            <option value="3">觀音亭</option>
+            <option value="4">西瀛虹橋</option>
+            <option value="5">篤行十村</option>
+            <option value="6">順承門</option>
+            <option value="7">金龜頭砲台</option>
+            <option value="8">隘門沙灘</option>
+            <option value="9">鎖港南鎮風塔</option>
+            <option value="10">龍門後灣港 (龍門沙灘)</option>
+            <option value="11">海底郵筒</option>
+            <option value="12">山水沙灘</option>
+            <option value="13">嵵裡沙灘</option>
+            <option value="14">風櫃洞／幽浮涼亭</option>
+            <option value="15">菓葉灰窯</option>
+            <option value="16">南寮古厝</option>
+            <option value="17">奎壁山摩西分海</option>
+            <option value="18">中屯風車</option>
+            <option value="19">澎湖水族館</option>
+            <option value="20">後寮天堂路</option>
+            <option value="21">澎湖跨海大橋</option>
+            <option value="22">通梁古榕</option>
+            <option value="23">澎湖玄武岩洞：鯨魚洞</option>
+            <option value="24">夢幻沙灘</option>
+            <option value="25">二崁聚落</option>
+            <option value="26">池西柱狀玄武岩 (池西岩瀑)</option>
+            <option value="27">小池角雙曲橋</option>
+            <option value="28">池東大菓葉柱狀玄武岩</option>
+            <option value="29">內垵沙灘</option>
+            <option value="30">西嶼西台</option>
+            <option value="31">三仙塔</option>
+            <option value="32">漁翁島燈塔</option>
+            <option value="33">雙心石滬</option>
+            <option value="34">大獅龍埕風景區</option>
+            <option value="35">金瓜仔礁(忘憂島)露營</option>
+            <option value="36">吉貝沙尾</option>
+          </select>
+          <button id="save_btn">保存</button>
+          <button id="add_btn">顯示行程表</button>
+          <button id="clear_btn">清空</button>
 
-      <div class="row">
-        <div class="col-lg-3 mb-4">
-          <div class="team">
-            <img src="images/person_1.jpg" alt="Image" class="img-fluid mb-4 rounded-20">
-            <div class="px-3">
-              <h3 class="mb-0">James Watson</h3>
-              <p>Co-Founder &amp; CEO</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="team">
-            <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-4 rounded-20">
-            <div class="px-3">
-              <h3 class="mb-0">Carl Anderson</h3>
-              <p>Co-Founder &amp; CEO</p>
-            </div>
-          </div>
-        </div>
+          <ul id="listOutput"></ul>
 
-        <div class="col-lg-3 mb-4">
-          <div class="team">
-            <img src="images/person_4.jpg" alt="Image" class="img-fluid mb-4 rounded-20">
-            <div class="px-3">
-              <h3 class="mb-0">Michelle Allison</h3>
-              <p>Co-Founder &amp; CEO</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="team">
-            <img src="images/person_3.jpg" alt="Image" class="img-fluid mb-4 rounded-20">
-            <div class="px-3">
-              <h3 class="mb-0">Drew Wood</h3>
-              <p>Co-Founder &amp; CEO</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-
-  
-
-  <div class="untree_co-section testimonial-section mt-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-7 text-center">
-          <h2 class="section-title text-center mb-5">Testimonials</h2>
-
-          <div class="owl-single owl-carousel no-nav">
-            <div class="testimonial mx-auto">
-              <figure class="img-wrap">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <h3 class="name">Adam Aderson</h3>
-              <blockquote>
-                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-              </blockquote>
-            </div>
-
-            <div class="testimonial mx-auto">
-              <figure class="img-wrap">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <h3 class="name">Lukas Devlin</h3>
-              <blockquote>
-                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-              </blockquote>
-            </div>
-
-            <div class="testimonial mx-auto">
-              <figure class="img-wrap">
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <h3 class="name">Kayla Bryant</h3>
-              <blockquote>
-                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-              </blockquote>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="untree_co-section">
-    <div class="container">
-      <div class="row justify-content-between align-items-center">
-
-        <div class="col-lg-6">
-          <figure class="img-play-video">
-            <a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=mwtbEGNABWU" data-fancybox>
-              <span></span>
-            </a>
-            <img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid rounded-20">
-          </figure>
-        </div>
-
-        <div class="col-lg-5">
-          <h2 class="section-title text-left mb-4">Take a look at Tour Video</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-
-          <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
-          <ul class="list-unstyled two-col clearfix">
-            <li>Outdoor recreation activities</li>
-            <li>Airlines</li>
-            <li>Car Rentals</li>
-            <li>Cruise Lines</li>
-            <li>Hotels</li>
-            <li>Railways</li>
-            <li>Travel Insurance</li>
-            <li>Package Tours</li>
-            <li>Insurance</li>
-            <li>Guide Books</li>
-          </ul>
-
-          <p><a href="#" class="btn btn-primary">Get Started</a></p>
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="py-5 cta-section">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h2 class="mb-2 text-white">Lets you Explore the Best. Contact Us Now</h2>
-          <p class="mb-4 lead text-white text-white-opacity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, fugit?</p>
-          <p class="mb-0"><a href="booking.html" class="btn btn-outline-white text-white btn-md font-weight-bold">Get in touch</a></p>
+          <script src="js/selection.js"></script>
         </div>
       </div>
     </div>
   </div>
 
   <div class="site-footer">
-    <div class="inner first">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="widget">
-              <h3 class="heading">About Tour</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            </div>
-            <div class="widget">
-              <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-dribbble"></span></a></li>
-                <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                <li><a href="#"><span class="icon-apple"></span></a></li>
-                <li><a href="#"><span class="icon-google"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 pl-lg-5">
-            <div class="widget">
-              <h3 class="heading">Pages</h3>
-              <ul class="links list-unstyled">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2">
-            <div class="widget">
-              <h3 class="heading">Resources</h3>
-              <ul class="links list-unstyled">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="widget">
-              <h3 class="heading">Contact</h3>
-              <ul class="list-unstyled quick-info links">
-                <li class="email"><a href="#">mail@example.com</a></li>
-                <li class="phone"><a href="#">+1 222 212 3819</a></li>
-                <li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="inner dark">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-8 mb-3 mb-md-0 mx-auto">
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co" class="link-highlight">Untree.co</a> <!-- License information: https://untree.co/license/ -->
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
+		<div class="inner dark">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
+						<p>Copyright &copy; 2024 外島旅遊景點。All Rights Reserved.</p>
+						<p id="lastModified" style="text-align: center;"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -335,6 +185,9 @@
       <span class="sr-only">Loading...</span>
     </div>
   </div>
+
+  <script src="js/choice.js"></script>
+  <script src="js/last_modified.js"></script>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
