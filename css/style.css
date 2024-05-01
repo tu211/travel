@@ -1,9 +1,9 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "標楷體", "Inter", sans-serif;
   line-height: 1.5;
   background: #ffffff;
   overflow-x: hidden;
-  font-size: 14px; }
+  font-size: 18px; }
   body:before {
     content: "";
     position: fixed;
@@ -54,7 +54,7 @@ a.text-primary {
     color: #1A374D !important; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  font-family: "Source Serif Pro", serif; }
+  font-family: "標楷體", "Source Serif Pro", serif; }
 
 .btn {
   padding-top: 12px;
