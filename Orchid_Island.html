@@ -82,24 +82,9 @@
   
   <div class="untree_co-section">
     <div class="container">
+      <h2 class="section-title mb-3 text-center">景點介紹</h2>
       <div class="row">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=10yT91hSr8YBlqN8RF5Jorc-pueOjx1o&ehbc=2E312F" width="640" height="480"></iframe>
-        <div class="col-lg-5 pl-lg-5 ml-auto">
-          <h2 class="section-title mb-4">About Tours</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <ul class="list-unstyled two-col clearfix">
-            <li>Outdoor recreation activities</li>
-            <li>Airlines</li>
-            <li>Car Rentals</li>
-            <li>Cruise Lines</li>
-            <li>Hotels</li>
-            <li>Railways</li>
-            <li>Travel Insurance</li>
-            <li>Package Tours</li>
-            <li>Insurance</li>
-            <li>Guide Books</li>
-          </ul>
-        </div>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=10yT91hSr8YBlqN8RF5Jorc-pueOjx1o&ehbc=2E312F" width="1280" height="960"></iframe>
       </div>
     </div>
   </div>
@@ -109,9 +94,26 @@
       <div class="row justify-content-center mb-5">
         <div class="col-md-6 text-center">
           <h2 class="section-title mb-3 text-center">行程表</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <table style="margin-left: 150px;">
+            <tr>
+              <td>step1.</td>
+              <td>選擇日期和時間</td>
+            </tr>
+            <tr>
+              <td>step2.</td>
+              <td>選擇景點</td>
+            </tr>
+            <tr>
+              <td>step3.</td>
+              <td>點保存再按顯示行程表</td>
+            </tr>
+            <tr>
+              <td>step4.</td>
+              <td>按照上述步驟以此類推</td>
+            </tr>
+          </table>
           <label for="time">時間：</label>
-          <input type="datetime-local" id="time">
+          <input type="datetime-local" id="time"><br>
           <label for="scenery">選擇景點：</label>
           <select id="scenery">
             <option value="">請選擇景點...</option>
@@ -136,7 +138,7 @@
             <option value="19">老人岩</option>
             <option value="20">坦克岩</option>
             <option value="21">鋼盔岩</option>
-          </select>
+          </select><br>
           <button id="save_btn">保存</button>
           <button id="add_btn">顯示行程表</button>
           <button id="clear_btn">清空</button>
